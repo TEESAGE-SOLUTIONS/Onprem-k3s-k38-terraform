@@ -1,12 +1,12 @@
 variable "master_instance_type" {
   description = "k3s server needs >= 2 GB RAM"
   type        = string
-  default     = "t2.medium"
+  default     = "t3.small"
 }
 
 variable "worker_instance_type" {
   type    = string
-  default = "t2.small"
+  default = "t3.micro"
 }
 
 variable "worker_count" {

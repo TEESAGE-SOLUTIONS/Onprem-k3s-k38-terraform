@@ -74,6 +74,6 @@ jobs:
         if: env.ACTION == 'apply'
         run: terraform output
 
-      # - name: Destroy everything
-      #   if: env.ACTION == 'destroy'
-      #   run: terraform destroy -input=false -auto-approve
+      - name: Destroy everything
+        if: env.ACTION == 'destroy'
+        run: terraform destroy -input=false -auto-approve
