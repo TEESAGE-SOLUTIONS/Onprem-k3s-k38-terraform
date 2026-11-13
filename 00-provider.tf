@@ -1,7 +1,7 @@
 terraform {
   # Remote state in S3 (backend blocks cannot use variables, so the bucket is written here)
   backend "s3" {
-    bucket       = "k8s-terrformstate "
+    bucket       = "k8s-terrformstate"
     key          = "k3s/terraform.tfstate"
     region       = "us-east-1"
     encrypt      = true
